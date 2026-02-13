@@ -1,0 +1,300 @@
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Chester Bugarin | Front-End Developer</title>
+
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+
+  <body>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <header class="topbar">
+      <div class="topbar-left">
+        <span class="topbar-title">portfolio.ts — visual-studio-code</span>
+      </div>
+
+      <div class="topbar-menu">
+        <span>File</span><span>Edit</span><span>Selection</span><span>View</span>
+        <span>Go</span><span>Run</span><span>Terminal</span><span>Help</span>
+      </div>
+
+      <div class="topbar-dots">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+    </header>
+
+    <div class="app">
+      <aside class="activitybar" aria-hidden="true">
+        <button class="icon active" type="button">⧉</button>
+        <button class="icon" type="button">🔎</button>
+        <button class="icon" type="button">⎇</button>
+        <button class="icon" type="button">🐞</button>
+      </aside>
+
+      <aside class="sidebar">
+        <div class="sidebar-head">EXPLORER</div>
+
+        <div class="tree">
+          
+          <div class="tree-root">Portfolio-2026</div>
+
+          <button class="file-item active" type="button" data-tab="portfolio">
+            <span class="file-icon">JS</span> <span>portfolio.ts</span>
+          </button>
+
+          <button class="file-item" type="button" data-tab="projects">
+            <span class="file-icon">JS</span> <span>projects.ts</span>
+          </button>
+
+          <button class="file-item" type="button" data-tab="contact">
+            <span class="file-icon">JS</span> <span>contact.ts</span>
+          </button>
+
+          <div class="file-item static">
+            <span class="file-icon md">MD</span> <span>README.md</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="tabbar">
+          <button class="tab active" type="button" data-tab="portfolio">portfolio.ts</button>
+          <button class="tab" type="button" data-tab="projects">projects.ts</button>
+          <button class="tab" type="button" data-tab="contact">contact.ts</button>
+        </div>
+
+        <div class="breadcrumb">src ▸ portfolio.ts ▸ class Developer</div>
+
+        <section class="editor">
+
+          <!-- ===== TAB: portfolio ===== -->
+          <section class="view active" id="view-portfolio">
+            <div class="code-block">
+              <div class="code-line"><span class="ln">1</span><span class="cm">// export class Developer {</span></div>
+              <div class="code-line"><span class="ln">2</span><span> </span></div>
+
+              <div class="hero">
+                <div class="hero-left">
+                  <div class="cm">// Executing main function...</div>
+                  <h1><span class="kw">export class</span> <span class="tag">SoftwareEngineer</span></h1>
+
+                  <p class="muted">
+                    Front-end / full-stack developer in training, building clean UI and secure apps.
+                  </p>
+
+                  <div class="hero-actions">
+                    <button class="btn btn-accent" type="button" data-tab="projects">RUN_PROJECTS</button>
+                    <a class="btn" href="images/chester_bugarin_resume.pdf" target="_blank" rel="noreferrer">GET_RESUME</a>
+                  </div>
+                </div>
+
+                <div class="hero-right">
+                  <div class="avatar-frame">
+                    <img src="images/my_photo.jpeg" alt="Your photo">
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills">
+              <h2 class="section-title"><span class="fn">async</span> getStack(): Promise&lt;Skill[]&gt;</h2>
+
+              <div class="skills-grid">
+                <div class="skill-tile">
+                  <span class="skill-icon kw">terminal</span>
+                  <span class="skill-label">Node.js</span>
+                </div>
+
+                <div class="skill-tile">
+                  <span class="skill-icon tag">javascript</span>
+                  <span class="skill-label">React</span>
+                </div>
+
+                <div class="skill-tile">
+                  <span class="skill-icon fn">code</span>
+                  <span class="skill-label">Java / Spring Boot</span>
+                </div>
+
+                <div class="skill-tile">
+                  <span class="skill-icon cm">web</span>
+                  <span class="skill-label">HTML/CSS</span>
+                </div>
+
+                <div class="skill-tile">
+                  <span class="skill-icon tag">database</span>
+                  <span class="skill-label">MongoDB / SQL</span>
+                </div>
+
+                <div class="skill-tile">
+                  <span class="skill-icon kw">account_tree</span>
+                  <span class="skill-label">Git/GitHub</span>
+                </div>
+              </div>
+
+              <div class="highlights">
+              <h2 class="section-title">
+                <span class="cm">// Technical Highlights</span><br>
+                <span class="kw">const</span> <span class="tag">technicalHighlights</span>: <span class="tag">string</span>[] =
+              </h2>
+              
+              <div class="ts-block" aria-label="Technical highlights">
+                <div class="ts-line">
+                  <span class="ts-ln">1</span>
+                  <span><span class="kw">const</span> <span class="tag">technicalHighlights</span>: <span class="tag">string</span>[] = [</span>
+                </div>
+
+                <div class="ts-line"><span class="ts-ln">2</span><span class="ts-str">"Built projects using MVC structure and modular components",</span></div>
+                <div class="ts-line"><span class="ts-ln">3</span><span class="ts-str">"Implemented JWT auth with HTTPOnly cookies and RBAC",</span></div>
+                <div class="ts-line"><span class="ts-ln">4</span><span class="ts-str">"Designed responsive UI with accessible layout patterns",</span></div>
+                <div class="ts-line"><span class="ts-ln">5</span><span class="ts-str">"Developed REST APIs with Express + MongoDB integration",</span></div>
+                <div class="ts-line"><span class="ts-ln">6</span><span class="ts-str">"Used GitHub for branching, commits, and teamwork workflow",</span></div>
+
+                <div class="ts-line">
+                  <span class="ts-ln">7</span>
+                  <span>];</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ===== TAB: projects ===== -->
+              <section class="view" id="view-projects">
+                <div class="pad">
+                  <h2 class="section-title"><span class="fn">renderFeaturedWorks</span>(): JSX.Element</h2>
+
+                  <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card" data-project="flight">
+                      <div class="thumb">
+                        <img src="images/flight-booking-form.png" alt="Flight booking form" loading="lazy">
+                        <div class="tags">
+                          <span class="pill">BOOTSTRAP</span>
+                          <span class="pill alt">JAVA</span>
+                        </div>
+                      </div>
+                      <div class="pc-body">
+                        <h3>Flight Booking App</h3>
+                        <p>Spring Boot project with form UI and structured backend setup.</p>
+                        <button class="link" type="button" data-project-open="flight">VIEW_DETAILS</button>
+                      </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-project="mern">
+                      <div class="thumb">
+                        <img src="images/student_Dashboard.png" alt="MERN dashboard" loading="lazy">
+                        <div class="tags">
+                          <span class="pill">REACT</span>
+                          <span class="pill alt">NODE</span>
+                        </div>
+                      </div>
+                      <div class="pc-body">
+                        <h3>MERN Auth + RBAC</h3>
+                        <p>JWT + HTTPOnly cookies, MVC structure, Student/Admin roles.</p>
+                        <button class="link" type="button" data-project-open="mern">VIEW_DETAILS</button>
+                      </div>
+                    </article>
+
+                  <!-- Project 3 -->
+                  <article class="project-card" data-project="sigmamd">
+                    <div class="thumb">
+                      <img src="images/sigma_login.png" alt="SigmaMD login screen" loading="lazy">
+                      <div class="tags">
+                        <span class="pill">MERN</span>
+                        <span class="pill alt">HEALTHCARE</span>
+                      </div>
+                    </div>
+
+                    <div class="pc-body">
+                      <h3>SigmaMD-EMR</h3>
+                      <p>Built a role-based EMR system using MERN with JWT authentication and protected routes, simulating secure multi-user workflows for clinical environments.</p>
+                      <button class="link" type="button" data-project-open="sigmamd">VIEW_DETAILS</button>
+                    </div>
+                  </article>
+                  
+                  <!-- Right-side preview panel -->
+                   
+                  <section class="preview hidden" id="projectPanel">
+                    <div class="preview-head">
+                      <div><span class="cm">// Preview</span> <span id="panelTitle" class="tag">Project</span></div>
+                      <button class="btn btn-small" id="closePanel" type="button">CLOSE</button>
+                    </div>
+
+                    <div class="preview-grid">
+                      <!-- IMPORTANT: id="panelMedia" -->
+                      <div class="preview-media" id="panelMedia">
+                        <img id="panelImg" src="" alt="">
+                        <video id="panelVideo" class="hidden" controls playsinline muted></video>
+                      </div>
+
+                      <div class="preview-info">
+                        <div id="panelTags" class="preview-tags"></div>
+                        <p id="panelDesc" class="muted"></p>
+
+                        <div class="preview-actions">
+                          <a class="btn" id="panelCode" target="_blank" rel="noreferrer">VIEW_CODE</a>
+                          <a class="btn btn-accent" id="panelDemo" target="_blank" rel="noreferrer">OPEN_DEMO</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                </div>
+              </section>
+          <!-- ===== TAB: contact ===== -->
+                <section class="view" id="view-contact">
+                  <div class="pad">
+                    <h2 class="section-title"><span class="fn">contactMe</span>(): void</h2>
+
+                    <div class="contact-card">
+                      <div class="cm">// Want to build something together?</div>
+                      <h3 class="contact-title">Let’s connect.</h3>
+                      <p class="muted contact-text">
+                        I’m open to internships, junior front-end roles, and school opportunities. The fastest way to reach me is email.
+                      </p>
+
+                      <div class="contact-actions">
+                        <a class="btn btn-accent" href="mailto:cbugarin@my.centennialcollege.ca?subject=Portfolio%20Contact">
+                          EMAIL.SEND()
+                        </a>
+
+                        <button class="btn" id="copyEmailBtn" type="button">COPY_EMAIL()</button>
+
+                        <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                          LINKEDIN.OPEN()
+                        </a>
+
+                        <a class="btn" href="https://github.com/cbugarin" target="_blank" rel="noreferrer">
+                          GITHUB.OPEN()
+                        </a>
+                      </div>
+
+                      <div class="contact-meta">
+                        <div class="meta-row"><span class="cm">// Email</span> <span class="tag">cbugarin@my.centennialcollege.ca</span></div>
+                        <div class="meta-row"><span class="cm">// Location</span> <span class="tag">Toronto, ON</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+        </section>
+      </main>
+    </div>
+
+    <footer class="statusbar">
+      <div class="status-left">main*</div>
+      <div class="status-right">UTF-8 · TypeScript JSX · Prettier</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+  </html>
